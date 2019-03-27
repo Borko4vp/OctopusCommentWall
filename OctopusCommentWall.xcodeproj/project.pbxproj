@@ -11,6 +11,7 @@
 		D90F92292226D2AF008939AF /* OctopusCommentWall.h in Headers */ = {isa = PBXBuildFile; fileRef = D90F92272226D2AF008939AF /* OctopusCommentWall.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D90F92302226D35F008939AF /* CommentWallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90F922F2226D35F008939AF /* CommentWallViewController.swift */; };
 		D90F92322226D386008939AF /* flutter_assets in Resources */ = {isa = PBXBuildFile; fileRef = D90F92312226D386008939AF /* flutter_assets */; };
+		EC2F664B224BA20300209813 /* UIColor+Flutter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2F664A224BA20300209813 /* UIColor+Flutter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		D90F922F2226D35F008939AF /* CommentWallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentWallViewController.swift; sourceTree = "<group>"; };
 		D90F92312226D386008939AF /* flutter_assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = flutter_assets; path = OctopusCommentWall/flutter_assets; sourceTree = "<group>"; };
 		DB54D9808A742B3FCD648139 /* Pods-OctopusCommentWall.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OctopusCommentWall.release.xcconfig"; path = "Pods/Target Support Files/Pods-OctopusCommentWall/Pods-OctopusCommentWall.release.xcconfig"; sourceTree = "<group>"; };
+		EC2F664A224BA20300209813 /* UIColor+Flutter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Flutter.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				D90F922F2226D35F008939AF /* CommentWallViewController.swift */,
 				D90F92272226D2AF008939AF /* OctopusCommentWall.h */,
 				D90F92282226D2AF008939AF /* Info.plist */,
+				EC2F664A224BA20300209813 /* UIColor+Flutter.swift */,
 			);
 			path = OctopusCommentWall;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D90F92302226D35F008939AF /* CommentWallViewController.swift in Sources */,
+				EC2F664B224BA20300209813 /* UIColor+Flutter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

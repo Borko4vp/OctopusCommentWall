@@ -19,6 +19,8 @@ open class CommentWallViewController: FlutterViewController {
     let BASE_URL_KEY = "baseUrl="
     let BASE_URL_API_SIFIX = "/api/"
     let USER_ID_KEY = "userUid="
+    let TOOLBAR_COLOR = "toolbarColor="
+    let TOOLBAR_TEXT_COLOR = "toolbarTextColor="
     let SEPARATOR_KEY = "&"
     
     var flutterRoute = ""
@@ -35,7 +37,9 @@ open class CommentWallViewController: FlutterViewController {
                              isPartner: Bool,
                              permissionLevel: Int,
                              userUid: String,
-                             baseURL: String?) {
+                             baseURL: String?,
+                             toolbarColor: UIColor,
+                             toolbarTextColor: UIColor) {
         let tokenPart = TOKEN_KEY + token + SEPARATOR_KEY
         let tenantPart = TENANT_KEY + tenanntKey + SEPARATOR_KEY
         let channelPart = CHANNEL_KEY + channelUid + SEPARATOR_KEY
@@ -46,6 +50,8 @@ open class CommentWallViewController: FlutterViewController {
             baseUrlPart = SEPARATOR_KEY + BASE_URL_KEY + baseURL + BASE_URL_API_SIFIX
         }
         let userUidPart = SEPARATOR_KEY + USER_ID_KEY + userUid
-        flutterRoute = FLUTTER_MODULE_KEY + tokenPart + tenantPart + channelPart + isPartnerPart + permissionLevelPart + baseUrlPart + userUidPart
+        let toolbarColorPart = SEPARATOR_KEY + TOOLBAR_COLOR + toolbarColor.toFlutterColorString()
+        let toolbarTextColorPart = SEPARATOR_KEY + TOOLBAR_TEXT_COLOR + toolbarTextColor.toFlutterColorString()
+        flutterRoute = FLUTTER_MODULE_KEY + tokenPart + tenantPart + channelPart + isPartnerPart + permissionLevelPart + baseUrlPart + userUidPart + toolbarColorPart + toolbarTextColorPart
     }
 }
